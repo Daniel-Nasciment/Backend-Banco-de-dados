@@ -16,7 +16,7 @@ app.route('/pedido').get((req, res) => {
 });
 
 app.route('/registro').get((req, res) => {
-    res.status(200).env("Teste de Registro OK")
+    res.status(200).json({a: 'teste registro'})
 });
 
 app.listen(port, () => {
